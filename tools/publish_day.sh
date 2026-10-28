@@ -8,19 +8,21 @@ set -euo pipefail
 dir="${1%/}"
 day="$(basename "$dir")"
 [[ "$day" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "folder name must be YYYY-MM-DD" >&2; exit 1; }
-remote="$(git -C "$(dirname "$0")/.." remote get-url origin)"
+repo="$(cd "$(dirname "$0")/.." && pwd)"
 
-work="$(mktemp -d)"
-trap 'rm -rf "$work"' EXIT
-mkdir "$work/$day"
+# The branch must sit on top of main so it carries the publish workflow.
+git -C "$repo" fetch -q origin main
+work="$(mktemp -d)/wt"
+git -C "$repo" worktree add -q --detach "$work" origin/main
+trap 'git -C "$repo" worktree remove --force "$work"' EXIT
+mkdir -p "$work/$day"
 shopt -s nullglob
 for f in "$dir"/*.png "$dir"/*.jpg "$dir"/*.jpeg "$dir"/*.webp "$dir"/*.mp4; do
   cp "$f" "$work/$day/"
 done
 [ -n "$(ls "$work/$day")" ] || { echo "no media in $dir" >&2; exit 1; }
-git -C "$work" init -q -b "upload/$day"
-git -C "$work" add -A
+git -C "$work" add -A "$day"
 git -C "$work" -c user.name=spandan-bot -c user.email=spandan-bot@users.noreply.github.com \
   commit -qm "Batch $day"
-git -C "$work" push -q --force "$remote" "upload/$day"
+git -C "$work" push -q --force origin "HEAD:refs/heads/upload/$day"
 echo "pushed upload/$day ($(ls "$work/$day" | wc -l) files); the workflow publishes it in ~1 min"
