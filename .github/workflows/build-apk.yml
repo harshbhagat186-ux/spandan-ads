@@ -25,14 +25,24 @@ jobs:
       - name: Signing key
         env:
           KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         run: |
-          if [ -n "$KEYSTORE_B64" ]; then echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks";
-          else echo "Missing KEYSTORE_B64 secret" >&2; exit 1; fi
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            pass="$KEYSTORE_PASSWORD"
+          else
+            # No stored key yet: sign with a one-off key (updates then need uninstall + reinstall).
+            pass="$(openssl rand -hex 16)"
+            keytool -genkeypair -keystore "$RUNNER_TEMP/release.jks" -alias spandan -keyalg RSA -keysize 2048 \
+              -validity 10000 -storepass "$pass" -keypass "$pass" \
+              -dname "CN=Spandan Hospital, O=Spandan Hospital, L=Jamnagar, C=IN"
+          fi
+          echo "::add-mask::$pass"
+          echo "SIGN_PASS=$pass" >> "$GITHUB_ENV"
       - name: Build release APK
         env:
           KEYSTORE_FILE: ${{ runner.temp }}/release.jks
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-        run: gradle :app:assembleRelease -PversionCode=${{ github.run_number }} -Prepo=${{ github.repository }}
+        run: KEYSTORE_PASSWORD="$SIGN_PASS" gradle :app:assembleRelease -PversionCode=${{ github.run_number }} -Prepo=${{ github.repository }}
       - name: Publish to the "app" release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

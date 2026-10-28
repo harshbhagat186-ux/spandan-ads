@@ -53,7 +53,7 @@ public class MainActivity extends BaseActivity {
         updateBanner.setBackgroundColor(Color.parseColor("#FFF3C4"));
         updateBanner.setTextColor(INK);
         updateBanner.setPadding(dp(16), dp(10), dp(16), dp(10));
-        updateBanner.setText("नया वर्ज़न उपलब्ध है, अपडेट करने के लिए यहाँ टैप करें");
+        updateBanner.setText("नया वर्ज़न उपलब्ध है: यहाँ टैप करके डाउनलोड करें (इंस्टॉल न हो तो पुराना ऐप हटाकर इंस्टॉल करें)");
         updateBanner.setVisibility(View.GONE);
         root.addView(updateBanner);
 
