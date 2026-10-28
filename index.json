@@ -1,6 +1,75 @@
 {
- "updated": "2026-10-28T10:36:04Z",
- "days": [],
+ "updated": "2026-10-28T10:37:52Z",
+ "days": [
+  {
+   "date": "2026-10-26",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-hernia-gujarati.png",
+     "title": "Hernia gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo1-hernia-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo1-hernia-gujarati.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-piles-gujarati.png",
+     "title": "Piles gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo2-piles-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo2-piles-gujarati.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-appendicitis.png",
+     "title": "Appendicitis",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo3-appendicitis.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo3-appendicitis.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo4-laparoscopy-benefits.png",
+     "title": "Laparoscopy benefits",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo4-laparoscopy-benefits.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo4-laparoscopy-benefits.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo5-meet-dr-ashok-ram.png",
+     "title": "Meet dr ashok ram",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo5-meet-dr-ashok-ram.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/photo5-meet-dr-ashok-ram.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-hernia-myths.mp4",
+     "title": "Hernia myths",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video1-hernia-myths.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video1-hernia-myths.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video1-hernia-voiceover.mp4",
+     "title": "Hernia voiceover",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video1-hernia-voiceover.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video1-hernia-voiceover.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-diabetic-foot-care.mp4",
+     "title": "Diabetic foot care",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video2-diabetic-foot-care.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video2-diabetic-foot-care.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-diabetic-foot-voiceover.mp4",
+     "title": "Diabetic foot voiceover",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video2-diabetic-foot-voiceover.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-26/video2-diabetic-foot-voiceover.thumb.jpg"
+    }
+   ]
+  }
+ ],
  "app": {
   "versionCode": 2,
   "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/app/SpandanAds.apk"
