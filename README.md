@@ -9,7 +9,7 @@ Android app + hosting for Spandan Hospital's daily ad batch (5 posters 1080x1350
 - `.github/workflows/build-apk.yml` builds a signed APK on every change under `app/` and publishes it
   to the release tagged `app`. The app shows an update banner when a newer build exists.
 
-Publish a day: `tools/publish_day.sh <owner>/<repo> /path/to/daily-ads/2026-10-28`
+Publish a day: `tools/publish_day.sh /path/to/daily-ads/2026-10-28` (pushes branch `upload/<day>`; `.github/workflows/publish.yml` turns it into the release).
 
 Install the app: open `https://github.com/<owner>/<repo>/releases/download/app/SpandanAds.apk` on the
 phone, allow "install unknown apps" for the browser when asked, then tap Install.
