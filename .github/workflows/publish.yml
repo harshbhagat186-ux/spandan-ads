@@ -33,15 +33,9 @@ jobs:
           [[ "$day" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad branch $BRANCH"; exit 1; }
           src="batch/$day"
           files=()
+          # Video poster frames (<name>.thumb.jpg) are made by tools/publish_day.sh.
           for f in "$src"/*.png "$src"/*.jpg "$src"/*.jpeg "$src"/*.webp "$src"/*.mp4; do
-            [ -e "$f" ] || continue
-            case "$f" in *.thumb.jpg) continue ;; esac
-            files+=("$f")
-            if [[ "$f" == *.mp4 ]]; then
-              thumb="${f%.mp4}.thumb.jpg"
-              ffmpeg -loglevel error -y -ss 1.5 -i "$f" -frames:v 1 -vf scale=540:-2 -q:v 4 "$thumb"
-              files+=("$thumb")
-            fi
+            [ -e "$f" ] && files+=("$f")
           done
           [ ${#files[@]} -gt 0 ] || { echo "no media in $src"; exit 1; }
           if gh release view "$day" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
