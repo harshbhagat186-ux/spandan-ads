@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-28T10:56:24Z",
+ "updated": "2026-10-28T10:57:17Z",
  "days": [
+  {
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-high-bp-gujarati.png",
+     "title": "High bp gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo1-high-bp-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo1-high-bp-gujarati.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-dengue-gujarati.png",
+     "title": "Dengue gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo2-dengue-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo2-dengue-gujarati.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-diwali-burn-first-aid.png",
+     "title": "Diwali burn first aid",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo3-diwali-burn-first-aid.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo3-diwali-burn-first-aid.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo4-questions-before-surgery.png",
+     "title": "Questions before surgery",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo4-questions-before-surgery.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo4-questions-before-surgery.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo5-diwali-diabetes-tips.png",
+     "title": "Diwali diabetes tips",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo5-diwali-diabetes-tips.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/photo5-diwali-diabetes-tips.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-road-accident-golden-hour.mp4",
+     "title": "Road accident golden hour",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/video1-road-accident-golden-hour.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/video1-road-accident-golden-hour.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-dengue-warning-signs.mp4",
+     "title": "Dengue warning signs",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/video2-dengue-warning-signs.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-28/video2-dengue-warning-signs.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-10-27",
    "items": [
