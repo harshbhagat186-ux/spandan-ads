@@ -37,10 +37,17 @@ public abstract class BaseActivity extends Activity {
                     ok = col >= 0 && c.getInt(col) == DownloadManager.STATUS_SUCCESSFUL;
                 }
             }
-            Saver.toast(BaseActivity.this, ok ? "✓ गैलरी में सेव हो गया" : "डाउनलोड नहीं हो पाया, फिर से कोशिश करें");
+            Saver.toast(BaseActivity.this, ok ? L.t("✓ Saved to gallery", "✓ गैलरी में सेव हो गया")
+                    : L.t("Download failed, please try again", "डाउनलोड नहीं हो पाया, फिर से कोशिश करें"));
             onSavedStateChanged();
         }
     };
+
+    @Override
+    protected void onCreate(android.os.Bundle state) {
+        L.load(this);
+        super.onCreate(state);
+    }
 
     @Override
     protected void onStart() {
@@ -70,9 +77,10 @@ public abstract class BaseActivity extends Activity {
         }
         try {
             for (Item it : items) ours.add(Saver.save(this, it));
-            Saver.toast(this, items.size() == 1 ? "डाउनलोड शुरू…" : items.size() + " फाइलें डाउनलोड हो रही हैं…");
+            Saver.toast(this, items.size() == 1 ? L.t("Downloading…", "डाउनलोड शुरू…")
+                    : L.t("Downloading " + items.size() + " files…", items.size() + " फाइलें डाउनलोड हो रही हैं…"));
         } catch (Exception e) {
-            Saver.toast(this, "सेव नहीं हो पाया: " + e.getMessage());
+            Saver.toast(this, L.t("Could not save: ", "सेव नहीं हो पाया: ") + e.getMessage());
         }
         onSavedStateChanged();
     }
@@ -85,7 +93,7 @@ public abstract class BaseActivity extends Activity {
         if (results.length > 0 && results[0] == PackageManager.PERMISSION_GRANTED) {
             saveItems(items);
         } else {
-            Saver.toast(this, "गैलरी में सेव करने के लिए Storage की अनुमति दें");
+            Saver.toast(this, L.t("Allow Storage permission to save to the gallery", "गैलरी में सेव करने के लिए Storage की अनुमति दें"));
         }
     }
 

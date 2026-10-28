@@ -155,7 +155,7 @@ public class ViewerActivity extends BaseActivity {
             });
             video.setOnErrorListener((mp, what, extra) -> {
                 spin.setVisibility(View.GONE);
-                Saver.toast(this, "वीडियो नहीं चल पाया, इंटरनेट चेक करें");
+                Saver.toast(this, L.t("Video couldn't play, check internet", "वीडियो नहीं चल पाया, इंटरनेट चेक करें"));
                 return true;
             });
             video.setVideoURI(Uri.parse(it.url));
@@ -173,7 +173,8 @@ public class ViewerActivity extends BaseActivity {
     protected void onSavedStateChanged() {
         if (save == null || items.isEmpty()) return;
         Item it = items.get(pos);
-        save.setText((Saver.isSaved(this, it) ? "✓ सेव हुआ • फिर से सेव करें" : "⬇ गैलरी में सेव करें")
+        save.setText((Saver.isSaved(this, it) ? L.t("✓ Saved • Save again", "✓ सेव हुआ • फिर से सेव करें")
+                : L.t("⬇ Save to gallery", "⬇ गैलरी में सेव करें"))
                 + (it.isVideo() ? "  (1080×1920)" : "  (1080×1350)"));
     }
 

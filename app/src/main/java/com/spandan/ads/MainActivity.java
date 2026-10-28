@@ -53,7 +53,8 @@ public class MainActivity extends BaseActivity {
         updateBanner.setBackgroundColor(Color.parseColor("#FFF3C4"));
         updateBanner.setTextColor(INK);
         updateBanner.setPadding(dp(16), dp(10), dp(16), dp(10));
-        updateBanner.setText("नया वर्ज़न उपलब्ध है: यहाँ टैप करके डाउनलोड करें (इंस्टॉल न हो तो पुराना ऐप हटाकर इंस्टॉल करें)");
+        updateBanner.setText(L.t("New version available: tap here to download (if it won't install, uninstall the old app first)",
+                "नया वर्ज़न उपलब्ध है: यहाँ टैप करके डाउनलोड करें (इंस्टॉल न हो तो पुराना ऐप हटाकर इंस्टॉल करें)"));
         updateBanner.setVisibility(View.GONE);
         root.addView(updateBanner);
 
@@ -107,12 +108,30 @@ public class MainActivity extends BaseActivity {
         t.setTextSize(19);
         t.setTypeface(Typeface.DEFAULT_BOLD);
         TextView s = new TextView(this);
-        s.setText("रोज़ के पोस्टर और रील • Full HD");
+        s.setText(L.t("Daily posters & reels • Full HD", "रोज़ के पोस्टर और रील • Full HD"));
         s.setTextColor(Color.parseColor("#DDEBD6"));
         s.setTextSize(13);
         titles.addView(t);
         titles.addView(s);
         bar.addView(titles, new LinearLayout.LayoutParams(0, -2, 1f));
+
+        Button lang = new Button(this, null, android.R.attr.borderlessButtonStyle);
+        lang.setText(L.isHindi() ? "English" : "हिंदी");
+        lang.setAllCaps(false);
+        lang.setTextColor(Color.WHITE);
+        lang.setTextSize(14);
+        GradientDrawable lb = new GradientDrawable();
+        lb.setStroke(dp(1), Color.WHITE);
+        lb.setCornerRadius(dp(16));
+        lang.setBackground(lb);
+        lang.setPadding(dp(10), 0, dp(10), 0);
+        lang.setMinHeight(dp(32));
+        lang.setMinimumHeight(dp(32));
+        lang.setOnClickListener(v -> {
+            L.toggle(this);
+            recreate();
+        });
+        bar.addView(lang, new LinearLayout.LayoutParams(-2, dp(32)));
 
         Button refresh = new Button(this, null, android.R.attr.borderlessButtonStyle);
         refresh.setText("⟳");
@@ -139,8 +158,8 @@ public class MainActivity extends BaseActivity {
                 main.post(() -> {
                     spinner.setVisibility(View.GONE);
                     status.setText(index == null
-                            ? "लिस्ट लोड नहीं हो पाई। इंटरनेट चेक करें और ⟳ दबाएँ।"
-                            : "इंटरनेट नहीं है, पुरानी लिस्ट दिख रही है।");
+                            ? L.t("Couldn't load the list. Check internet and tap ⟳.", "लिस्ट लोड नहीं हो पाई। इंटरनेट चेक करें और ⟳ दबाएँ।")
+                            : L.t("No internet, showing the saved list.", "इंटरनेट नहीं है, पुरानी लिस्ट दिख रही है।"));
                     status.setVisibility(View.VISIBLE);
                 });
             }
@@ -152,7 +171,7 @@ public class MainActivity extends BaseActivity {
         list.removeAllViews();
         savedRefreshers.clear();
         if (idx.days.isEmpty()) {
-            status.setText("अभी कोई बैच नहीं है।");
+            status.setText(L.t("No batches yet.", "अभी कोई बैच नहीं है।"));
             status.setVisibility(View.VISIBLE);
         }
         for (Item.Day day : idx.days) list.addView(dayCard(day));
@@ -192,7 +211,7 @@ public class MainActivity extends BaseActivity {
         date.setTypeface(Typeface.DEFAULT_BOLD);
         date.setTextColor(INK);
         head.addView(date, new LinearLayout.LayoutParams(0, -2, 1f));
-        Button all = pillButton("⬇ सब सेव करें (" + day.items.size() + ")");
+        Button all = pillButton(L.t("⬇ Save all (", "⬇ सब सेव करें (") + day.items.size() + ")");
         all.setOnClickListener(v -> saveItems(day.items));
         head.addView(all);
         card.addView(head);
@@ -201,11 +220,11 @@ public class MainActivity extends BaseActivity {
         List<Item> videos = new ArrayList<>();
         for (Item it : day.items) (it.isVideo() ? videos : photos).add(it);
         if (!photos.isEmpty()) {
-            card.addView(sectionLabel("पोस्टर (" + photos.size() + ")"));
+            card.addView(sectionLabel(L.t("Posters (", "पोस्टर (") + photos.size() + ")"));
             addGrid(card, day, photos, 1350f / 1080f);
         }
         if (!videos.isEmpty()) {
-            card.addView(sectionLabel("रील (" + videos.size() + ")"));
+            card.addView(sectionLabel(L.t("Reels (", "रील (") + videos.size() + ")"));
             addGrid(card, day, videos, 1920f / 1080f);
         }
         return card;
@@ -258,7 +277,7 @@ public class MainActivity extends BaseActivity {
         box.addView(frame);
 
         Button save = pillButton("");
-        Runnable mark = () -> save.setText(Saver.isSaved(this, item) ? "✓ सेव हुआ" : "⬇ सेव करें");
+        Runnable mark = () -> save.setText(Saver.isSaved(this, item) ? L.t("✓ Saved", "✓ सेव हुआ") : L.t("⬇ Save", "⬇ सेव करें"));
         mark.run();
         savedRefreshers.add(mark);
         save.setOnClickListener(v -> {
@@ -303,9 +322,9 @@ public class MainActivity extends BaseActivity {
             in.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
             Date d = in.parse(ymd);
             String today = in.format(new Date());
-            SimpleDateFormat out = new SimpleDateFormat("d MMM yyyy, EEEE", new Locale("hi", "IN"));
+            SimpleDateFormat out = new SimpleDateFormat("d MMM yyyy, EEEE", L.isHindi() ? new Locale("hi", "IN") : Locale.ENGLISH);
             out.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
-            return (ymd.equals(today) ? "आज • " : "") + out.format(d);
+            return (ymd.equals(today) ? L.t("Today • ", "आज • ") : "") + out.format(d);
         } catch (Exception e) {
             return ymd;
         }
