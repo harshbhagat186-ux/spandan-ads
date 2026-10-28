@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+def vCode = (project.findProperty('versionCode') ?: '1') as Integer
+
+android {
+    namespace 'com.spandan.ads'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.spandan.ads'
+        minSdk 24
+        targetSdk 34
+        versionCode vCode
+        versionName "1.${vCode}"
+        // Repo that holds the daily batches as GitHub Releases + index.json
+        buildConfigField 'String', 'REPO', "\"${project.findProperty('repo') ?: 'OWNER/spandan-ads'}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(System.getenv('KEYSTORE_FILE') ?: 'release.jks')
+            storePassword System.getenv('KEYSTORE_PASSWORD') ?: ''
+            keyAlias System.getenv('KEY_ALIAS') ?: 'spandan'
+            keyPassword System.getenv('KEYSTORE_PASSWORD') ?: ''
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

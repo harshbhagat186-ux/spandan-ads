@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#4F7A43</color>
+    <color name="brand_light">#7A9A6A</color>
+    <color name="bg">#F4F7F2</color>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/brand</item>
+        <item name="android:colorPrimaryDark">@color/brand</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:statusBarColor">@color/brand</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+
+    <style name="ViewerTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorAccent">@color/brand_light</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
