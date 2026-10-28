@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -191,65 +192,91 @@ public class MainActivity extends BaseActivity {
     }
 
     private View dayCard(Item.Day day) {
+        List<Item> photos = new ArrayList<>();
+        List<Item> videos = new ArrayList<>();
+        for (Item it : day.items) (it.isVideo() ? videos : photos).add(it);
+
         LinearLayout card = new LinearLayout(this);
         card.setOrientation(LinearLayout.VERTICAL);
-        card.setPadding(dp(12), dp(12), dp(12), dp(12));
         GradientDrawable bg = new GradientDrawable();
         bg.setColor(Color.WHITE);
         bg.setCornerRadius(dp(14));
         card.setBackground(bg);
         card.setElevation(dp(2));
+        card.setClipToOutline(true);
+        card.setPadding(0, 0, 0, dp(10));
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-1, -2);
-        lp.topMargin = dp(10);
+        lp.topMargin = dp(12);
         card.setLayoutParams(lp);
 
+        // Date heading strip
         LinearLayout head = new LinearLayout(this);
         head.setGravity(Gravity.CENTER_VERTICAL);
+        head.setBackgroundColor(BRAND);
+        head.setPadding(dp(14), dp(10), dp(10), dp(10));
+        LinearLayout dates = new LinearLayout(this);
+        dates.setOrientation(LinearLayout.VERTICAL);
         TextView date = new TextView(this);
-        date.setText(prettyDate(day.date));
+        date.setText("📅  " + prettyDate(day.date));
         date.setTextSize(17);
         date.setTypeface(Typeface.DEFAULT_BOLD);
-        date.setTextColor(INK);
-        head.addView(date, new LinearLayout.LayoutParams(0, -2, 1f));
-        Button all = pillButton(L.t("⬇ Save all (", "⬇ सब सेव करें (") + day.items.size() + ")");
+        date.setTextColor(Color.WHITE);
+        TextView count = new TextView(this);
+        count.setText(photos.size() + L.t(" posters · ", " पोस्टर · ") + videos.size() + L.t(" reels", " रील"));
+        count.setTextColor(Color.parseColor("#DDEBD6"));
+        count.setTextSize(13);
+        dates.addView(date);
+        dates.addView(count);
+        head.addView(dates, new LinearLayout.LayoutParams(0, -2, 1f));
+        Button all = pillButton(L.t("⬇ Save all", "⬇ सब सेव करें"));
+        GradientDrawable ab = new GradientDrawable();
+        ab.setColor(Color.WHITE);
+        ab.setCornerRadius(dp(20));
+        all.setBackground(ab);
+        all.setTextColor(BRAND);
         all.setOnClickListener(v -> saveItems(day.items));
         head.addView(all);
         card.addView(head);
 
-        List<Item> photos = new ArrayList<>();
-        List<Item> videos = new ArrayList<>();
-        for (Item it : day.items) (it.isVideo() ? videos : photos).add(it);
         if (!photos.isEmpty()) {
-            card.addView(sectionLabel(L.t("Posters (", "पोस्टर (") + photos.size() + ")"));
-            addGrid(card, day, photos, 1350f / 1080f);
+            card.addView(sectionLabel(L.t("Posters", "पोस्टर") + " (" + photos.size() + ")  ›"));
+            card.addView(row(day, photos, 1350f / 1080f));
         }
         if (!videos.isEmpty()) {
-            card.addView(sectionLabel(L.t("Reels (", "रील (") + videos.size() + ")"));
-            addGrid(card, day, videos, 1920f / 1080f);
+            card.addView(sectionLabel(L.t("Reels", "रील") + " (" + videos.size() + ")  ›"));
+            card.addView(row(day, videos, 1920f / 1080f));
         }
         return card;
     }
 
-    private void addGrid(LinearLayout card, Item.Day day, List<Item> items, float ratio) {
-        int tileWidth = (getResources().getDisplayMetrics().widthPixels - dp(60)) / 2;
-        for (int i = 0; i < items.size(); i += 2) {
-            LinearLayout row = new LinearLayout(this);
-            for (int j = i; j < i + 2; j++) {
-                LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(0, -2, 1f);
-                p.setMargins(dp(4), dp(4), dp(4), dp(4));
-                if (j < items.size()) {
-                    row.addView(tile(day, items.get(j), ratio, tileWidth), p);
-                } else {
-                    row.addView(new View(this), p);
-                }
-            }
-            card.addView(row);
+    /** One sideways-scrolling row of tiles; about 2.3 tiles fit so the next one peeks in. */
+    private View row(Item.Day day, List<Item> items, float ratio) {
+        int tileWidth = Math.round((getResources().getDisplayMetrics().widthPixels - dp(20)) / 2.3f);
+        HorizontalScrollView scroll = new HorizontalScrollView(this);
+        scroll.setHorizontalScrollBarEnabled(false);
+        LinearLayout strip = new LinearLayout(this);
+        strip.setPadding(dp(8), 0, dp(8), 0);
+        for (Item it : items) {
+            LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(tileWidth, -2);
+            p.setMargins(dp(4), dp(4), dp(4), dp(4));
+            strip.addView(tile(day, it, ratio, tileWidth), p);
         }
+        scroll.addView(strip);
+        return scroll;
     }
 
     private View tile(Item.Day day, Item item, float ratio, int width) {
         LinearLayout box = new LinearLayout(this);
         box.setOrientation(LinearLayout.VERTICAL);
+
+        TextView label = new TextView(this);
+        label.setText(item.label());
+        label.setTextColor(INK);
+        label.setTypeface(Typeface.DEFAULT_BOLD);
+        label.setTextSize(13);
+        label.setSingleLine(true);
+        label.setPadding(dp(2), 0, 0, dp(4));
+        box.addView(label);
 
         AspectFrame frame = new AspectFrame(this, ratio);
         GradientDrawable ph = new GradientDrawable();
@@ -275,6 +302,15 @@ public class MainActivity extends BaseActivity {
         }
         frame.setOnClickListener(v -> ViewerActivity.open(this, day.items, day.items.indexOf(item)));
         box.addView(frame);
+
+        TextView name = new TextView(this);
+        name.setText(item.title);
+        name.setTextColor(Color.GRAY);
+        name.setTextSize(12);
+        name.setMaxLines(2);
+        name.setEllipsize(android.text.TextUtils.TruncateAt.END);
+        name.setPadding(dp(2), dp(4), 0, 0);
+        box.addView(name);
 
         Button save = pillButton("");
         Runnable mark = () -> save.setText(Saver.isSaved(this, item) ? L.t("✓ Saved", "✓ सेव हुआ") : L.t("⬇ Save", "⬇ सेव करें"));
@@ -312,7 +348,7 @@ public class MainActivity extends BaseActivity {
         t.setText(text);
         t.setTextColor(BRAND);
         t.setTypeface(Typeface.DEFAULT_BOLD);
-        t.setPadding(dp(4), dp(12), 0, dp(2));
+        t.setPadding(dp(14), dp(12), 0, dp(4));
         return t;
     }
 
@@ -325,6 +361,17 @@ public class MainActivity extends BaseActivity {
             SimpleDateFormat out = new SimpleDateFormat("d MMM yyyy, EEEE", L.isHindi() ? new Locale("hi", "IN") : Locale.ENGLISH);
             out.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
             return (ymd.equals(today) ? L.t("Today • ", "आज • ") : "") + out.format(d);
+        } catch (Exception e) {
+            return ymd;
+        }
+    }
+
+    /** e.g. "27 Oct" */
+    static String shortDate(String ymd) {
+        try {
+            SimpleDateFormat in = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+            SimpleDateFormat out = new SimpleDateFormat("d MMM", L.isHindi() ? new Locale("hi", "IN") : Locale.ENGLISH);
+            return out.format(in.parse(ymd));
         } catch (Exception e) {
             return ymd;
         }

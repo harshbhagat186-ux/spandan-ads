@@ -14,6 +14,7 @@ public class Item {
     public final String file;
     public final String url;
     public final String thumb; // may be empty for videos without a poster frame
+    public int num; // 1-based position among the day's photos or reels
 
     Item(String date, JSONObject o) {
         this.date = date;
@@ -22,6 +23,13 @@ public class Item {
         this.title = o.optString("title", file);
         this.url = o.optString("url");
         this.thumb = o.optString("thumb", isVideo() ? "" : url);
+        this.num = o.optInt("num", 0);
+    }
+
+    /** e.g. "Poster 1 · 27 Oct" */
+    public String label() {
+        String kind = isVideo() ? L.t("Reel", "रील") : L.t("Poster", "पोस्टर");
+        return kind + " " + num + " · " + MainActivity.shortDate(date);
     }
 
     public boolean isVideo() {
@@ -61,6 +69,8 @@ public class Item {
                             day.items.add(new Item(day.date, items.getJSONObject(j)));
                         }
                     }
+                    int photos = 0, videos = 0;
+                    for (Item it : day.items) it.num = it.isVideo() ? ++videos : ++photos;
                     idx.days.add(day);
                 }
             }

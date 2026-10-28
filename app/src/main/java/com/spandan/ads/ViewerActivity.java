@@ -40,7 +40,7 @@ public class ViewerActivity extends BaseActivity {
             for (Item it : dayItems) {
                 arr.put(new JSONObject()
                         .put("type", it.type).put("title", it.title).put("file", it.file)
-                        .put("url", it.url).put("thumb", it.thumb).put("date", it.date));
+                        .put("url", it.url).put("thumb", it.thumb).put("date", it.date).put("num", it.num));
             }
         } catch (Exception ignored) {
         }
@@ -135,7 +135,7 @@ public class ViewerActivity extends BaseActivity {
 
     private void render() {
         Item it = items.get(pos);
-        title.setText(it.title);
+        title.setText(it.label() + "  " + it.title);
         counter.setText((pos + 1) + "/" + items.size());
         onSavedStateChanged();
         stage.removeAllViews();
