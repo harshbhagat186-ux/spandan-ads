@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T10:38:21Z",
+ "updated": "2026-10-28T10:43:07Z",
  "days": [
   {
    "date": "2026-10-27",
@@ -125,7 +125,7 @@
   }
  ],
  "app": {
-  "versionCode": 2,
+  "versionCode": 3,
   "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/app/SpandanAds.apk"
  }
 }
