@@ -21,8 +21,8 @@ for f in "$dir"/*.png "$dir"/*.jpg "$dir"/*.jpeg "$dir"/*.webp "$dir"/*.mp4; do
   case "$f" in *.thumb.jpg) continue ;; esac
   cp "$f" "$work/$day/"
   if [[ "$f" == *.mp4 ]]; then
-    # Poster frame for the app's grid, taken 1.5s in (past the logo intro).
-    ffmpeg -loglevel error -y -ss 1.5 -i "$f" -frames:v 1 -vf scale=540:-2 -q:v 4 \
+    # Poster frame for the app's grid, taken 4s in (past the logo intro).
+    ffmpeg -loglevel error -y -ss 4 -i "$f" -frames:v 1 -vf scale=540:-2 -q:v 4 \
       "$work/$day/$(basename "${f%.mp4}").thumb.jpg"
   fi
 done
