@@ -1,0 +1,10 @@
+{
+ "enabled": false,
+ "price": 299,
+ "period_days": 30,
+ "trial_days": 7,
+ "upi_id": "",
+ "payee": "Spandan Hospital",
+ "whatsapp": "918980005526",
+ "members": {}
+}

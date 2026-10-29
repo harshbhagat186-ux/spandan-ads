@@ -42,10 +42,13 @@ public class MainActivity extends BaseActivity {
     private TextView updateBanner;
     private Item.Index index;
     private final List<Runnable> savedRefreshers = new ArrayList<>();
+    private Subscription sub;
 
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
+        sub = Subscription.cached(this);
+        sub.trialDaysLeft(this); // starts the free-trial clock on first launch
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
         root.addView(header());
@@ -151,9 +154,20 @@ public class MainActivity extends BaseActivity {
                 String json = Net.getText(INDEX_URL + "?t=" + System.currentTimeMillis() / 60000);
                 Item.Index idx = Item.Index.parse(json);
                 prefs().edit().putString("index", json).apply();
+                String subJson = null;
+                try {
+                    subJson = Net.getText(Subscription.URL + "?t=" + System.currentTimeMillis() / 60000);
+                } catch (Exception ignored) {
+                }
+                String fetched = subJson;
                 main.post(() -> {
                     spinner.setVisibility(View.GONE);
+                    if (fetched != null) {
+                        Subscription.store(this, fetched);
+                        sub = Subscription.parse(this, fetched);
+                    }
                     show(idx);
+                    if (!isFinishing()) sub.maybeShow(this, this::refresh);
                 });
             } catch (Exception e) {
                 main.post(() -> {
@@ -176,6 +190,7 @@ public class MainActivity extends BaseActivity {
             status.setVisibility(View.VISIBLE);
         }
         for (Item.Day day : idx.days) list.addView(dayCard(day));
+        list.addView(accountFooter());
 
         int mine = 0;
         try {
@@ -300,7 +315,13 @@ public class MainActivity extends BaseActivity {
             play.setBackground(c);
             frame.addView(play, new FrameLayout.LayoutParams(dp(56), dp(56), Gravity.CENTER));
         }
-        frame.setOnClickListener(v -> ViewerActivity.open(this, day.items, day.items.indexOf(item)));
+        frame.setOnClickListener(v -> {
+            if (sub.isLocked(this)) {
+                sub.showPaywall(this, false, this::refresh);
+            } else {
+                ViewerActivity.open(this, day.items, day.items.indexOf(item));
+            }
+        });
         box.addView(frame);
 
         TextView name = new TextView(this);
@@ -325,6 +346,34 @@ public class MainActivity extends BaseActivity {
         sp.topMargin = dp(6);
         box.addView(save, sp);
         return box;
+    }
+
+    private View accountFooter() {
+        TextView t = new TextView(this);
+        String line = L.t("Your app code: ", "आपका ऐप कोड: ") + Subscription.code(this);
+        if (sub.enabled) {
+            int paid = sub.paidDaysLeft();
+            line += "\n" + (paid > 0
+                    ? L.t("Subscription: " + paid + " day(s) left", "सब्सक्रिप्शन: " + paid + " दिन बाकी")
+                    : L.t("Free trial: " + sub.trialDaysLeft(this) + " day(s) left", "फ्री ट्रायल: " + sub.trialDaysLeft(this) + " दिन बाकी"));
+            t.setOnClickListener(v -> sub.showPaywall(this, false, this::refresh));
+        }
+        t.setText(line);
+        t.setTextIsSelectable(!sub.enabled);
+        t.setTextColor(Color.GRAY);
+        t.setTextSize(12);
+        t.setGravity(Gravity.CENTER);
+        t.setPadding(0, dp(18), 0, dp(6));
+        return t;
+    }
+
+    @Override
+    protected void saveItems(List<Item> items) {
+        if (sub.isLocked(this)) {
+            sub.showPaywall(this, false, this::refresh);
+            return;
+        }
+        super.saveItems(items);
     }
 
     private Button pillButton(String text) {
