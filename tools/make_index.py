@@ -45,8 +45,19 @@ def title_for(name):
     return " ".join(words).strip().capitalize() or name
 
 
+def show_from():
+    """Oldest batch date the app lists (app_settings.json "show_from"); older releases stay but are hidden."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "app_settings.json")
+    try:
+        with open(path) as f:
+            return json.load(f).get("show_from", "")
+    except FileNotFoundError:
+        return ""
+
+
 def main(repo):
     days, app = [], None
+    start = show_from()
     for rel in releases(repo):
         if rel.get("draft"):
             continue
@@ -58,7 +69,7 @@ def main(repo):
             if apk and m:
                 app = {"versionCode": int(m.group(1)), "url": apk}
             continue
-        if not DATE_TAG.match(tag):
+        if not DATE_TAG.match(tag) or tag < start:
             continue
         photos, videos = [], []
         for name in sorted(assets):
