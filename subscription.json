@@ -1,10 +1,10 @@
 {
- "enabled": false,
- "price": 299,
- "period_days": 30,
+ "enabled": true,
+ "price": 16000,
+ "period_days": 90,
  "trial_days": 7,
- "upi_id": "",
- "payee": "Spandan Hospital",
- "whatsapp": "918980005526",
+ "upi_id": "denishashingadiya284@oksbi",
+ "payee": "Denisha Shingadiya",
+ "whatsapp": "919274951250",
  "members": {}
 }

@@ -162,7 +162,7 @@ final class Subscription {
         box.addView(body);
 
         TextView priceView = new TextView(a);
-        priceView.setText("₹" + price + L.t(" / " + periodDays + " days", " / " + periodDays + " दिन"));
+        priceView.setText(priceText() + " / " + periodText());
         priceView.setTextSize(26);
         priceView.setTypeface(Typeface.DEFAULT_BOLD);
         priceView.setTextColor(MainActivity.BRAND);
@@ -170,13 +170,14 @@ final class Subscription {
         box.addView(priceView);
 
         TextView codeView = new TextView(a);
-        codeView.setText(L.t("Your app code: ", "आपका ऐप कोड: ") + code);
+        codeView.setText(L.t("Your app code: ", "आपका ऐप कोड: ") + code
+                + (upiId.isEmpty() ? "" : "\nUPI ID: " + upiId));
         codeView.setTextIsSelectable(true);
         codeView.setGravity(Gravity.CENTER);
         codeView.setPadding(0, dp(a, 6), 0, dp(a, 12));
         box.addView(codeView);
 
-        Button pay = bigButton(a, L.t("Pay ₹" + price + " with UPI", "UPI से ₹" + price + " भरें"), MainActivity.BRAND, Color.WHITE);
+        Button pay = bigButton(a, L.t("Pay " + priceText() + " with UPI", "UPI से " + priceText() + " भरें"), MainActivity.BRAND, Color.WHITE);
         pay.setOnClickListener(v -> payUpi(a, code));
         pay.setEnabled(!upiId.isEmpty());
         box.addView(pay, buttonParams(a));
@@ -206,6 +207,20 @@ final class Subscription {
         b.show();
     }
 
+    /** e.g. "₹16,000" */
+    String priceText() {
+        return "₹" + java.text.NumberFormat.getIntegerInstance(new Locale("en", "IN")).format(price);
+    }
+
+    /** e.g. "3 months" or "45 days" */
+    String periodText() {
+        if (periodDays % 30 == 0) {
+            int m = periodDays / 30;
+            return m == 1 ? L.t("1 month", "1 महीना") : L.t(m + " months", m + " महीने");
+        }
+        return L.t(periodDays + " days", periodDays + " दिन");
+    }
+
     private void payUpi(Activity a, String code) {
         Uri uri = new Uri.Builder().scheme("upi").authority("pay")
                 .appendQueryParameter("pa", upiId)
@@ -223,7 +238,7 @@ final class Subscription {
     }
 
     private void sendProof(Activity a, String code) {
-        String text = "Hello, I paid ₹" + price + " for Spandan Ads.\nApp code: " + code
+        String text = "Hello, I paid " + priceText() + " for Spandan Ads (" + periodText() + ").\nApp code: " + code
                 + "\n(Attaching payment screenshot)";
         Uri uri = Uri.parse("https://wa.me/" + whatsapp.replaceAll("[^0-9]", "") + "?text=" + Uri.encode(text));
         try {
