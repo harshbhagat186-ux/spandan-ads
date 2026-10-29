@@ -2,7 +2,7 @@
  "enabled": true,
  "price": 16000,
  "period_days": 90,
- "trial_days": 7,
+ "trial_days": 0,
  "upi_id": "denishashingadiya284@oksbi",
  "payee": "Denisha Shingadiya",
  "whatsapp": "919274951250",

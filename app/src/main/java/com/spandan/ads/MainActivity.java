@@ -189,7 +189,10 @@ public class MainActivity extends BaseActivity {
             status.setText(L.t("No batches yet.", "अभी कोई बैच नहीं है।"));
             status.setVisibility(View.VISIBLE);
         }
-        for (Item.Day day : idx.days) list.addView(dayCard(day));
+        // Nothing to browse until the app is activated.
+        if (!sub.isLocked(this)) {
+            for (Item.Day day : idx.days) list.addView(dayCard(day));
+        }
         list.addView(accountFooter());
 
         int mine = 0;
@@ -351,7 +354,10 @@ public class MainActivity extends BaseActivity {
     private View accountFooter() {
         TextView t = new TextView(this);
         String line = L.t("Your app code: ", "आपका ऐप कोड: ") + Subscription.code(this);
-        if (sub.enabled) {
+        if (sub.isLocked(this)) {
+            line += "\n" + L.t("Not activated yet: tap here to subscribe", "ऐप चालू नहीं है: सब्सक्राइब करने के लिए यहाँ टैप करें");
+            t.setOnClickListener(v -> sub.showPaywall(this, false, this::refresh));
+        } else if (sub.enabled) {
             int paid = sub.paidDaysLeft();
             line += "\n" + (paid > 0
                     ? L.t("Subscription: " + paid + " day(s) left", "सब्सक्रिप्शन: " + paid + " दिन बाकी")

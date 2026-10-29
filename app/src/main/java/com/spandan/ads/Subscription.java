@@ -152,7 +152,9 @@ final class Subscription {
         int left = paidDaysLeft() > 0 ? paidDaysLeft() : trialDaysLeft(a);
         TextView body = new TextView(a);
         body.setText((blocking
-                ? L.t("Your free trial has ended.", "आपका फ्री ट्रायल खत्म हो गया है।")
+                ? (trialDays == 0
+                        ? L.t("Pay and send us your app code to activate the app.", "ऐप चालू करने के लिए पेमेंट करें और अपना ऐप कोड भेजें।")
+                        : L.t("Your free trial has ended.", "आपका फ्री ट्रायल खत्म हो गया है।"))
                 : L.t(left + " day(s) left.", left + " दिन बाकी हैं।"))
                 + "\n\n" + L.t("5 posters + 2 reels every day, full HD, ready to post.",
                         "हर दिन 5 पोस्टर + 2 रील, फुल HD, पोस्ट करने के लिए तैयार।"));
