@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T13:09:45Z",
+ "updated": "2026-10-29T13:33:46Z",
  "min_version": 7,
  "days": [
   {
@@ -39,6 +39,48 @@
      "title": "Wound care after surgery",
      "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo5-wound-care-after-surgery.png",
      "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo5-wound-care-after-surgery.png"
+    },
+    {
+     "type": "photo",
+     "file": "update-photo1-anal-fissure-english.png",
+     "title": "Update photo1 anal fissure english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo1-anal-fissure-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo1-anal-fissure-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "update-photo2-jaundice-hindi.png",
+     "title": "Update photo2 jaundice hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo2-jaundice-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo2-jaundice-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "update-photo3-sudden-belly-pain-gujarati.png",
+     "title": "Update photo3 sudden belly pain gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo3-sudden-belly-pain-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-photo3-sudden-belly-pain-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "update-video1-lipoma-english.mp4",
+     "title": "Update video1 lipoma english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video1-lipoma-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video1-lipoma-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "update-video2-food-poisoning-hindi.mp4",
+     "title": "Update video2 food poisoning hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video2-food-poisoning-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video2-food-poisoning-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "update-video3-snake-bite-gujarati.mp4",
+     "title": "Update video3 snake bite gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video3-snake-bite-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/update-video3-snake-bite-gujarati.thumb.jpg"
     },
     {
      "type": "video",
