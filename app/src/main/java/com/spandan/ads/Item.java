@@ -53,6 +53,7 @@ public class Item {
     public static class Index {
         public final List<Day> days = new ArrayList<>();
         public int appVersionCode;
+        public int minVersion;
         public String appApkUrl = "";
 
         public static Index parse(String json) throws Exception {
@@ -74,6 +75,7 @@ public class Item {
                     idx.days.add(day);
                 }
             }
+            idx.minVersion = root.optInt("min_version");
             JSONObject app = root.optJSONObject("app");
             if (app != null) {
                 idx.appVersionCode = app.optInt("versionCode");

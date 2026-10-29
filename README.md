@@ -3,7 +3,7 @@
 Android app + hosting for Spandan Hospital's daily ad batch (5 posters 1080x1350 + 2 reels 1080x1920).
 
 - Each day is a GitHub Release tagged `YYYY-MM-DD`; its assets are the original full-HD files.
-- `index.json` (built by `.github/workflows/index.yml` from the releases) is what the app reads.
+- `feed.json` (built by `tools/make_index.py` from the releases) is what the app reads; `index.json` only tells pre-v7 installs to update. `app_settings.json` sets `show_from` and `min_version`.
 - The app (`app/`) lists the days, previews posters and reels, and saves the original files straight
   into the phone gallery (Pictures/Spandan, Movies/Spandan).
 - `.github/workflows/build-apk.yml` builds a signed APK on every change under `app/` and publishes it

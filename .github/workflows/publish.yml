@@ -1,7 +1,7 @@
 name: Publish daily batch
 
 # A session pushes a day's files to a branch named upload/YYYY-MM-DD (files under YYYY-MM-DD/).
-# This turns them into the release tagged YYYY-MM-DD, removes the branch, and refreshes index.json.
+# This turns them into the release tagged YYYY-MM-DD, removes the branch, and refreshes feed.json.
 on:
   push:
     branches: ["upload/**"]
@@ -45,16 +45,16 @@ jobs:
               --notes "Daily batch for $day: posters 1080x1350, reels 1080x1920." --latest=false
           fi
           git -C batch push origin --delete "$BRANCH"
-      - name: Refresh index.json
+      - name: Refresh feed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: site
         run: |
-          python3 tools/make_index.py "$GITHUB_REPOSITORY" > index.json
-          if git diff --quiet -I '"updated"' -- index.json; then exit 0; fi
+          python3 tools/make_index.py "$GITHUB_REPOSITORY"
+          if git diff --quiet -I '"updated"' -- feed.json index.json; then exit 0; fi
           git config user.name "spandan-bot"
           git config user.email "spandan-bot@users.noreply.github.com"
-          git add index.json
-          git commit -m "Update index.json"
+          git add feed.json index.json
+          git commit -m "Update feed"
           git pull --rebase origin main
           git push origin HEAD:main

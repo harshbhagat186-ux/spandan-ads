@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity {
     static final int INK = Color.parseColor("#1E2B1A");
 
     private static final String INDEX_URL =
-            "https://raw.githubusercontent.com/" + BuildConfig.REPO + "/main/index.json";
+            "https://raw.githubusercontent.com/" + BuildConfig.REPO + "/main/feed.json";
 
     private final Handler main = new Handler(Looper.getMainLooper());
     private LinearLayout list;
@@ -199,6 +199,20 @@ public class MainActivity extends BaseActivity {
         try {
             mine = getPackageManager().getPackageInfo(getPackageName(), 0).versionCode;
         } catch (Exception ignored) {
+        }
+        if (mine < idx.minVersion && !idx.appApkUrl.isEmpty()) {
+            // This version no longer receives ads; only the latest APK does.
+            list.removeAllViews();
+            new android.app.AlertDialog.Builder(this)
+                    .setTitle(L.t("Please update the app", "कृपया ऐप अपडेट करें"))
+                    .setMessage(L.t("This version no longer gets new ads. Uninstall it and install the latest version.",
+                            "इस वर्ज़न में अब नए ऐड नहीं आएंगे। इसे हटाकर नया वर्ज़न इंस्टॉल करें।"))
+                    .setCancelable(false)
+                    .setPositiveButton(L.t("Download", "डाउनलोड करें"), (d, w) ->
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(idx.appApkUrl))))
+                    .setNegativeButton(L.t("Close", "बंद करें"), (d, w) -> finish())
+                    .show();
+            return;
         }
         if (idx.appVersionCode > mine && !idx.appApkUrl.isEmpty()) {
             updateBanner.setVisibility(View.VISIBLE);

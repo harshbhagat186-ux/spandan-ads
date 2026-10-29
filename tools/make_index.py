@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Builds index.json (what the app shows) from the repo's GitHub Releases.
+"""Builds feed.json (what the app shows) from the repo's GitHub Releases.
+
+index.json is the feed of app versions before 7; it now lists no days and only points
+those old installs to the new APK.
 
 Each daily batch is a release tagged YYYY-MM-DD whose assets are the photos (.png/.jpg)
 and reels (.mp4). A video's poster frame is an asset named <video-stem>.thumb.jpg.
 The release tagged "app" holds the latest APK; its notes carry "versionCode: N".
 
-Usage: GITHUB_TOKEN=... python3 tools/make_index.py owner/repo > index.json
+Usage: GITHUB_TOKEN=... python3 tools/make_index.py owner/repo   (writes feed.json and index.json)
 """
 import json
 import os
@@ -45,19 +48,29 @@ def title_for(name):
     return " ".join(words).strip().capitalize() or name
 
 
-def show_from():
-    """Oldest batch date the app lists (app_settings.json "show_from"); older releases stay but are hidden."""
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "app_settings.json")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+
+
+def settings():
+    """app_settings.json: "show_from" hides older batches (releases are kept),
+    "min_version" makes older app versions ask for an update."""
     try:
-        with open(path) as f:
-            return json.load(f).get("show_from", "")
+        with open(os.path.join(ROOT, "app_settings.json")) as f:
+            return json.load(f)
     except FileNotFoundError:
-        return ""
+        return {}
+
+
+def write(name, data):
+    with open(os.path.join(ROOT, name), "w") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+        f.write("\n")
 
 
 def main(repo):
     days, app = [], None
-    start = show_from()
+    cfg = settings()
+    start = cfg.get("show_from", "")
     for rel in releases(repo):
         if rel.get("draft"):
             continue
@@ -86,11 +99,15 @@ def main(repo):
         if photos or videos:
             days.append({"date": tag, "items": photos + videos})
     days.sort(key=lambda d: d["date"], reverse=True)
-    out = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "days": days}
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    feed = {"updated": updated, "min_version": cfg.get("min_version", 0), "days": days}
     if app:
-        out["app"] = app
-    json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
-    sys.stdout.write("\n")
+        feed["app"] = app
+    write("feed.json", feed)
+    legacy = {"updated": updated, "days": []}
+    if app:
+        legacy["app"] = {"versionCode": 999999, "url": app["url"]}
+    write("index.json", legacy)
 
 
 if __name__ == "__main__":

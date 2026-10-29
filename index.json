@@ -1,63 +1,8 @@
 {
- "updated": "2026-10-29T13:06:21Z",
- "days": [
-  {
-   "date": "2026-10-29",
-   "items": [
-    {
-     "type": "photo",
-     "file": "photo1-acidity-gujarati.png",
-     "title": "Acidity gujarati",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo1-acidity-gujarati.png",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo1-acidity-gujarati.png"
-    },
-    {
-     "type": "photo",
-     "file": "photo2-neck-swelling-thyroid-gujarati.png",
-     "title": "Neck swelling thyroid gujarati",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo2-neck-swelling-thyroid-gujarati.png",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo2-neck-swelling-thyroid-gujarati.png"
-    },
-    {
-     "type": "photo",
-     "file": "photo3-breast-cancer-awareness.png",
-     "title": "Breast cancer awareness",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo3-breast-cancer-awareness.png",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo3-breast-cancer-awareness.png"
-    },
-    {
-     "type": "photo",
-     "file": "photo4-fatty-liver.png",
-     "title": "Fatty liver",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo4-fatty-liver.png",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo4-fatty-liver.png"
-    },
-    {
-     "type": "photo",
-     "file": "photo5-wound-care-after-surgery.png",
-     "title": "Wound care after surgery",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo5-wound-care-after-surgery.png",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/photo5-wound-care-after-surgery.png"
-    },
-    {
-     "type": "video",
-     "file": "video1-breast-self-check.mp4",
-     "title": "Breast self check",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/video1-breast-self-check.mp4",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/video1-breast-self-check.thumb.jpg"
-    },
-    {
-     "type": "video",
-     "file": "video2-varicose-veins.mp4",
-     "title": "Varicose veins",
-     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/video2-varicose-veins.mp4",
-     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-29/video2-varicose-veins.thumb.jpg"
-    }
-   ]
-  }
- ],
+ "updated": "2026-10-29T13:08:15Z",
+ "days": [],
  "app": {
-  "versionCode": 6,
+  "versionCode": 999999,
   "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/app/SpandanAds.apk"
  }
 }

@@ -1,1 +1,4 @@
-{"show_from": "2026-10-29"}
+{
+ "show_from": "2026-10-29",
+ "min_version": 7
+}

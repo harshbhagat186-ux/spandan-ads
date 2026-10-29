@@ -2,7 +2,7 @@
 # Publishes one day's batch folder so it shows up in the app.
 #   tools/publish_day.sh /mnt/project-files/daily-ads/2026-10-28
 # Pushes the files to branch upload/<day>; the "Publish daily batch" workflow then makes the
-# GitHub Release <day> (originals, full HD), deletes the branch and refreshes index.json.
+# GitHub Release <day> (originals, full HD), deletes the branch and refreshes feed.json.
 # Re-running for the same day replaces changed files.
 set -euo pipefail
 dir="${1%/}"
