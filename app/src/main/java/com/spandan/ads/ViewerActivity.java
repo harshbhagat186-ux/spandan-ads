@@ -110,7 +110,23 @@ public class ViewerActivity extends BaseActivity {
         });
         LinearLayout.LayoutParams sp = new LinearLayout.LayoutParams(-1, dp(52));
         sp.setMargins(dp(16), dp(10), dp(16), dp(16));
+        sp.bottomMargin = dp(8);
         root.addView(save, sp);
+
+        Button share = new Button(this, null, android.R.attr.borderlessButtonStyle);
+        share.setAllCaps(false);
+        share.setText(L.t("↗ Share", "↗ शेयर करें"));
+        share.setTextColor(Color.WHITE);
+        share.setTextSize(16);
+        share.setTypeface(Typeface.DEFAULT_BOLD);
+        GradientDrawable sg = new GradientDrawable();
+        sg.setStroke(dp(2), Color.WHITE);
+        sg.setCornerRadius(dp(26));
+        share.setBackground(sg);
+        share.setOnClickListener(v -> shareItem(items.get(pos)));
+        LinearLayout.LayoutParams shp = new LinearLayout.LayoutParams(-1, dp(52));
+        shp.setMargins(dp(16), 0, dp(16), dp(16));
+        root.addView(share, shp);
 
         setContentView(root);
         render();

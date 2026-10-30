@@ -29,5 +29,11 @@
             android:configChanges="orientation|screenSize|screenLayout"
             android:exported="false"
             android:theme="@style/ViewerTheme" />
+
+        <provider
+            android:name=".ShareProvider"
+            android:authorities="com.spandan.ads.share"
+            android:exported="false"
+            android:grantUriPermissions="true" />
     </application>
 </manifest>

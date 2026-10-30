@@ -362,6 +362,24 @@ public class MainActivity extends BaseActivity {
         LinearLayout.LayoutParams sp = new LinearLayout.LayoutParams(-1, dp(40));
         sp.topMargin = dp(6);
         box.addView(save, sp);
+
+        Button share = pillButton(L.t("↗ Share", "↗ शेयर करें"));
+        GradientDrawable sb = new GradientDrawable();
+        sb.setColor(Color.WHITE);
+        sb.setStroke(dp(2), BRAND);
+        sb.setCornerRadius(dp(20));
+        share.setBackground(sb);
+        share.setTextColor(BRAND);
+        share.setOnClickListener(v -> {
+            if (sub.isLocked(this)) {
+                sub.showPaywall(this, false, this::refresh);
+            } else {
+                shareItem(item);
+            }
+        });
+        LinearLayout.LayoutParams shp = new LinearLayout.LayoutParams(-1, dp(40));
+        shp.topMargin = dp(6);
+        box.addView(share, shp);
         return box;
     }
 

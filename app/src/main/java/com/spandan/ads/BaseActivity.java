@@ -97,6 +97,26 @@ public abstract class BaseActivity extends Activity {
         }
     }
 
+    /** Downloads the original file (if needed) and opens the share sheet with it. */
+    protected void shareItem(Item item) {
+        Saver.toast(this, L.t("Preparing to share…", "शेयर की तैयारी…"));
+        java.util.concurrent.Executors.newSingleThreadExecutor().execute(() -> {
+            try {
+                java.io.File f = new java.io.File(ShareProvider.dir(this), item.date + "_" + item.file);
+                if (!f.exists()) Net.download(item.url, f);
+                android.net.Uri uri = ShareProvider.uriFor(f.getName());
+                Intent send = new Intent(Intent.ACTION_SEND)
+                        .setType(item.isVideo() ? "video/mp4" : "image/*")
+                        .putExtra(Intent.EXTRA_STREAM, uri)
+                        .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                send.setClipData(android.content.ClipData.newRawUri("", uri));
+                runOnUiThread(() -> startActivity(Intent.createChooser(send, L.t("Share via", "इससे शेयर करें"))));
+            } catch (Exception e) {
+                runOnUiThread(() -> Saver.toast(this, L.t("Couldn't share, check internet", "शेयर नहीं हो पाया, इंटरनेट चेक करें")));
+            }
+        });
+    }
+
     /** Called when the saved markers may have changed. */
     protected void onSavedStateChanged() {}
 
