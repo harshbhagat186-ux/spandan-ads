@@ -1,7 +1,54 @@
 {
- "updated": "2026-10-29T13:33:46Z",
+ "updated": "2026-10-30T02:19:55Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-10-30",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-skin-abscess-english.png",
+     "title": "Skin abscess english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo1-skin-abscess-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo1-skin-abscess-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-breathlessness-hindi.png",
+     "title": "Breathlessness hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo2-breathlessness-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo2-breathlessness-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-low-sugar-gujarati.png",
+     "title": "Low sugar gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo3-low-sugar-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/photo3-low-sugar-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-head-injury-english.mp4",
+     "title": "Head injury english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video1-head-injury-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video1-head-injury-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-dog-bite-rabies-hindi.mp4",
+     "title": "Dog bite rabies hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video2-dog-bite-rabies-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video2-dog-bite-rabies-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-fracture-first-aid-gujarati.mp4",
+     "title": "Fracture first aid gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video3-fracture-first-aid-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-10-30/video3-fracture-first-aid-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-10-29",
    "items": [
