@@ -1,7 +1,54 @@
 {
- "updated": "2026-10-31T02:18:27Z",
+ "updated": "2026-11-01T02:18:47Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-01",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-back-pain-red-flags-english.png",
+     "title": "Back pain red flags english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo1-back-pain-red-flags-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo1-back-pain-red-flags-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-leg-swelling-hindi.png",
+     "title": "Leg swelling hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo2-leg-swelling-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo2-leg-swelling-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-long-cough-gujarati.png",
+     "title": "Long cough gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo3-long-cough-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/photo3-long-cough-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-after-surgery-warning-signs-english.mp4",
+     "title": "After surgery warning signs english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video1-after-surgery-warning-signs-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video1-after-surgery-warning-signs-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-diabetes-checkups-hindi.mp4",
+     "title": "Diabetes checkups hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video2-diabetes-checkups-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video2-diabetes-checkups-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-pesticide-poisoning-gujarati.mp4",
+     "title": "Pesticide poisoning gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video3-pesticide-poisoning-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-01/video3-pesticide-poisoning-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-10-31",
    "items": [
