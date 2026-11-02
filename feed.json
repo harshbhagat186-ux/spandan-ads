@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-01T02:18:47Z",
+ "updated": "2026-11-02T02:18:24Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-02",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-dangerous-headache-english.png",
+     "title": "Dangerous headache english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo1-dangerous-headache-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo1-dangerous-headache-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-pneumonia-hindi.png",
+     "title": "Pneumonia hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo2-pneumonia-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo2-pneumonia-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-urine-infection-gujarati.png",
+     "title": "Urine infection gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo3-urine-infection-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/photo3-urine-infection-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-fainting-first-aid-english.mp4",
+     "title": "Fainting first aid english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video1-fainting-first-aid-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video1-fainting-first-aid-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-heart-attack-signs-hindi.mp4",
+     "title": "Heart attack signs hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video2-heart-attack-signs-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video2-heart-attack-signs-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-seizure-first-aid-gujarati.mp4",
+     "title": "Seizure first aid gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video3-seizure-first-aid-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-02/video3-seizure-first-aid-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-01",
    "items": [
