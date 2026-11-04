@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-03T02:19:47Z",
+ "updated": "2026-11-04T02:19:31Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-04",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-kidney-warning-signs-english.png",
+     "title": "Kidney warning signs english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo1-kidney-warning-signs-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo1-kidney-warning-signs-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-snoring-sleep-apnea-hindi.png",
+     "title": "Snoring sleep apnea hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo2-snoring-sleep-apnea-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo2-snoring-sleep-apnea-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-quit-smoking-gujarati.png",
+     "title": "Quit smoking gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo3-quit-smoking-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/photo3-quit-smoking-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-check-bp-at-home-english.mp4",
+     "title": "Check bp at home english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video1-check-bp-at-home-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video1-check-bp-at-home-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-typhoid-hindi.mp4",
+     "title": "Typhoid hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video2-typhoid-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video2-typhoid-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-handwashing-gujarati.mp4",
+     "title": "Handwashing gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video3-handwashing-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-04/video3-handwashing-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-03",
    "items": [
