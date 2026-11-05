@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-04T02:19:31Z",
+ "updated": "2026-11-05T02:20:26Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-05",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-child-fever-english.png",
+     "title": "Child fever english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo1-child-fever-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo1-child-fever-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-tingling-numbness-hindi.png",
+     "title": "Tingling numbness hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo2-tingling-numbness-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo2-tingling-numbness-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-belly-fat-gujarati.png",
+     "title": "Belly fat gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo3-belly-fat-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/photo3-belly-fat-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-recovery-after-keyhole-surgery-english.mp4",
+     "title": "Recovery after keyhole surgery english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video1-recovery-after-keyhole-surgery-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video1-recovery-after-keyhole-surgery-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-chemical-in-eye-hindi.mp4",
+     "title": "Chemical in eye hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video2-chemical-in-eye-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video2-chemical-in-eye-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-hands-only-cpr-gujarati.mp4",
+     "title": "Hands only cpr gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video3-hands-only-cpr-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-05/video3-hands-only-cpr-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-04",
    "items": [
