@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-05T02:20:26Z",
+ "updated": "2026-11-06T02:18:52Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-06",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-testicle-pain-emergency-english.png",
+     "title": "Testicle pain emergency english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo1-testicle-pain-emergency-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo1-testicle-pain-emergency-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-prostate-urine-trouble-hindi.png",
+     "title": "Prostate urine trouble hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo2-prostate-urine-trouble-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo2-prostate-urine-trouble-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-cholesterol-silent-gujarati.png",
+     "title": "Cholesterol silent gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo3-cholesterol-silent-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/photo3-cholesterol-silent-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-rusty-nail-tetanus-english.mp4",
+     "title": "Rusty nail tetanus english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video1-rusty-nail-tetanus-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video1-rusty-nail-tetanus-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-stop-bleeding-hindi.mp4",
+     "title": "Stop bleeding hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video2-stop-bleeding-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video2-stop-bleeding-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-scorpion-sting-gujarati.mp4",
+     "title": "Scorpion sting gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video3-scorpion-sting-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-06/video3-scorpion-sting-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-05",
    "items": [
