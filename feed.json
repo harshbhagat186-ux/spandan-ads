@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-07T02:16:59Z",
+ "updated": "2026-11-08T02:17:39Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-08",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-bowel-cancer-signs-english.png",
+     "title": "Bowel cancer signs english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo1-bowel-cancer-signs-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo1-bowel-cancer-signs-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-diabetes-eye-check-hindi.png",
+     "title": "Diabetes eye check hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo2-diabetes-eye-check-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo2-diabetes-eye-check-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-hydrocele-swelling-gujarati.png",
+     "title": "Hydrocele swelling gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo3-hydrocele-swelling-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/photo3-hydrocele-swelling-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-elderly-fall-english.mp4",
+     "title": "Elderly fall english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video1-elderly-fall-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video1-elderly-fall-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-bee-sting-hindi.mp4",
+     "title": "Bee sting hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video2-bee-sting-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video2-bee-sting-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-dust-in-eye-gujarati.mp4",
+     "title": "Dust in eye gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video3-dust-in-eye-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-08/video3-dust-in-eye-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-07",
    "items": [
