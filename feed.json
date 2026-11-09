@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-08T02:17:39Z",
+ "updated": "2026-11-09T02:17:48Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-09",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-pilonidal-sinus-english.png",
+     "title": "Pilonidal sinus english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo1-pilonidal-sinus-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo1-pilonidal-sinus-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-ingrown-toenail-hindi.png",
+     "title": "Ingrown toenail hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo2-ingrown-toenail-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo2-ingrown-toenail-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-fistula-gujarati.png",
+     "title": "Fistula gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo3-fistula-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/photo3-fistula-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-before-surgery-english.mp4",
+     "title": "Before surgery english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video1-before-surgery-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video1-before-surgery-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-mosquito-protection-hindi.mp4",
+     "title": "Mosquito protection hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video2-mosquito-protection-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video2-mosquito-protection-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-crushed-finger-gujarati.mp4",
+     "title": "Crushed finger gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video3-crushed-finger-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-09/video3-crushed-finger-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-08",
    "items": [
