@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-09T02:17:48Z",
+ "updated": "2026-11-10T02:22:24Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-10",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-neck-lump-english.png",
+     "title": "Neck lump english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo1-neck-lump-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo1-neck-lump-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-worms-in-children-hindi.png",
+     "title": "Worms in children hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo2-worms-in-children-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo2-worms-in-children-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-foot-corns-gujarati.png",
+     "title": "Foot corns gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo3-foot-corns-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/photo3-foot-corns-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-antibiotic-safety-english.mp4",
+     "title": "Antibiotic safety english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video1-antibiotic-safety-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video1-antibiotic-safety-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-winter-care-elderly-hindi.mp4",
+     "title": "Winter care elderly hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video2-winter-care-elderly-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video2-winter-care-elderly-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-thorn-in-foot-gujarati.mp4",
+     "title": "Thorn in foot gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video3-thorn-in-foot-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-10/video3-thorn-in-foot-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-09",
    "items": [
