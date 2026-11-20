@@ -1,5 +1,5 @@
 {
- "enabled": true,
+ "enabled": false,
  "price": 16000,
  "period_days": 90,
  "trial_days": 7,
