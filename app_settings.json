@@ -1,4 +1,5 @@
 {
  "show_from": "2026-10-29",
- "min_version": 7
+ "min_version": 7,
+ "update_banner": false
 }

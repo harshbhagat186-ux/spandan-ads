@@ -101,7 +101,8 @@ def main(repo):
     days.sort(key=lambda d: d["date"], reverse=True)
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     feed = {"updated": updated, "min_version": cfg.get("min_version", 0), "days": days}
-    if app:
+    # "update_banner": false keeps installed apps from being asked to install a newer APK.
+    if app and cfg.get("update_banner", True):
         feed["app"] = app
     write("feed.json", feed)
     legacy = {"updated": updated, "days": []}
