@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-20T07:27:12Z",
+ "updated": "2026-11-21T02:17:19Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-21",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-umbilical-hernia-english.png",
+     "title": "Umbilical hernia english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo1-umbilical-hernia-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo1-umbilical-hernia-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-sleep-health-hindi.png",
+     "title": "Sleep health hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo2-sleep-health-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo2-sleep-health-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-teeth-care-gujarati.png",
+     "title": "Teeth care gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo3-teeth-care-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/photo3-teeth-care-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-check-pulse-english.mp4",
+     "title": "Check pulse english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video1-check-pulse-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video1-check-pulse-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-hot-tea-scald-hindi.mp4",
+     "title": "Hot tea scald hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video2-hot-tea-scald-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video2-hot-tea-scald-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-dislocated-shoulder-gujarati.mp4",
+     "title": "Dislocated shoulder gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video3-dislocated-shoulder-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-21/video3-dislocated-shoulder-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-20",
    "items": [
