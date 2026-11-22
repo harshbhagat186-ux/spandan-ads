@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-21T02:17:19Z",
+ "updated": "2026-11-22T02:17:13Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-22",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-cataract-signs-english.png",
+     "title": "Cataract signs english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo1-cataract-signs-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo1-cataract-signs-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-gout-uric-acid-hindi.png",
+     "title": "Gout uric acid hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo2-gout-uric-acid-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo2-gout-uric-acid-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-less-salt-gujarati.png",
+     "title": "Less salt gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo3-less-salt-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/photo3-less-salt-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-recovery-position-english.mp4",
+     "title": "Recovery position english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video1-recovery-position-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video1-recovery-position-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-eye-injury-hindi.mp4",
+     "title": "Eye injury hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video2-eye-injury-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video2-eye-injury-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-helmet-safety-gujarati.mp4",
+     "title": "Helmet safety gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video3-helmet-safety-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-22/video3-helmet-safety-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-21",
    "items": [
