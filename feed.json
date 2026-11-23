@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-22T02:17:13Z",
+ "updated": "2026-11-23T02:17:11Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-23",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-pancreatitis-signs-english.png",
+     "title": "Pancreatitis signs english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo1-pancreatitis-signs-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo1-pancreatitis-signs-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-child-ear-pain-hindi.png",
+     "title": "Child ear pain hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo2-child-ear-pain-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo2-child-ear-pain-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-hepatitis-b-gujarati.png",
+     "title": "Hepatitis b gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo3-hepatitis-b-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/photo3-hepatitis-b-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-drowning-first-aid-english.mp4",
+     "title": "Drowning first aid english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video1-drowning-first-aid-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video1-drowning-first-aid-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-knocked-out-tooth-hindi.mp4",
+     "title": "Knocked out tooth hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video2-knocked-out-tooth-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video2-knocked-out-tooth-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-gas-geyser-safety-gujarati.mp4",
+     "title": "Gas geyser safety gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video3-gas-geyser-safety-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-23/video3-gas-geyser-safety-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-22",
    "items": [
