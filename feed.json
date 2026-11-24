@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-23T02:17:11Z",
+ "updated": "2026-11-24T02:17:13Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-24",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-blood-donation-english.png",
+     "title": "Blood donation english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo1-blood-donation-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo1-blood-donation-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-racing-heartbeat-hindi.png",
+     "title": "Racing heartbeat hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo2-racing-heartbeat-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo2-racing-heartbeat-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-pregnancy-warning-signs-gujarati.png",
+     "title": "Pregnancy warning signs gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo3-pregnancy-warning-signs-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/photo3-pregnancy-warning-signs-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-chemical-on-skin-english.mp4",
+     "title": "Chemical on skin english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video1-chemical-on-skin-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video1-chemical-on-skin-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-dont-stop-bp-medicine-hindi.mp4",
+     "title": "Dont stop bp medicine hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video2-dont-stop-bp-medicine-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video2-dont-stop-bp-medicine-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-rat-bite-gujarati.mp4",
+     "title": "Rat bite gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video3-rat-bite-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-24/video3-rat-bite-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-23",
    "items": [
