@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-24T02:17:13Z",
+ "updated": "2026-11-25T02:17:35Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-25",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-hoarse-voice-english.png",
+     "title": "Hoarse voice english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo1-hoarse-voice-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo1-hoarse-voice-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-fungal-infection-hindi.png",
+     "title": "Fungal infection hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo2-fungal-infection-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo2-fungal-infection-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-conjunctivitis-gujarati.png",
+     "title": "Conjunctivitis gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo3-conjunctivitis-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/photo3-conjunctivitis-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-gas-leak-english.mp4",
+     "title": "Gas leak english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video1-gas-leak-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video1-gas-leak-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-cracked-heels-hindi.mp4",
+     "title": "Cracked heels hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video2-cracked-heels-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video2-cracked-heels-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-sudden-dizziness-gujarati.mp4",
+     "title": "Sudden dizziness gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video3-sudden-dizziness-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-25/video3-sudden-dizziness-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-24",
    "items": [
