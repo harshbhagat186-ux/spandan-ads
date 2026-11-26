@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-25T02:17:35Z",
+ "updated": "2026-11-26T02:17:01Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-26",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-prediabetes-english.png",
+     "title": "Prediabetes english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo1-prediabetes-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo1-prediabetes-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-child-vaccines-hindi.png",
+     "title": "Child vaccines hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo2-child-vaccines-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo2-child-vaccines-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-weight-loss-gujarati.png",
+     "title": "Weight loss gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo3-weight-loss-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/photo3-weight-loss-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-fish-bone-throat-english.mp4",
+     "title": "Fish bone throat english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video1-fish-bone-throat-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video1-fish-bone-throat-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-medicine-overdose-hindi.mp4",
+     "title": "Medicine overdose hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video2-medicine-overdose-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video2-medicine-overdose-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-heater-safety-gujarati.mp4",
+     "title": "Heater safety gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video3-heater-safety-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-26/video3-heater-safety-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-25",
    "items": [
