@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-26T02:17:01Z",
+ "updated": "2026-11-27T02:17:14Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-27",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-bedsores-english.png",
+     "title": "Bedsores english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo1-bedsores-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo1-bedsores-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-overweight-children-hindi.png",
+     "title": "Overweight children hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo2-overweight-children-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo2-overweight-children-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-leg-pain-walking-gujarati.png",
+     "title": "Leg pain walking gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo3-leg-pain-walking-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/photo3-leg-pain-walking-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-bleeding-after-tooth-removal-english.mp4",
+     "title": "Bleeding after tooth removal english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video1-bleeding-after-tooth-removal-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video1-bleeding-after-tooth-removal-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-silencer-burn-hindi.mp4",
+     "title": "Silencer burn hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video2-silencer-burn-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video2-silencer-burn-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-ear-wax-gujarati.mp4",
+     "title": "Ear wax gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video3-ear-wax-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-27/video3-ear-wax-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-26",
    "items": [
