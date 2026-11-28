@@ -1,7 +1,54 @@
 {
- "updated": "2026-11-27T02:17:14Z",
+ "updated": "2026-11-28T02:16:50Z",
  "min_version": 7,
  "days": [
+  {
+   "date": "2026-11-28",
+   "items": [
+    {
+     "type": "photo",
+     "file": "photo1-urine-leakage-english.png",
+     "title": "Urine leakage english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo1-urine-leakage-english.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo1-urine-leakage-english.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo2-dry-eyes-screen-hindi.png",
+     "title": "Dry eyes screen hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo2-dry-eyes-screen-hindi.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo2-dry-eyes-screen-hindi.png"
+    },
+    {
+     "type": "photo",
+     "file": "photo3-elderly-dehydration-gujarati.png",
+     "title": "Elderly dehydration gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo3-elderly-dehydration-gujarati.png",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/photo3-elderly-dehydration-gujarati.png"
+    },
+    {
+     "type": "video",
+     "file": "video1-painkiller-safety-english.mp4",
+     "title": "Painkiller safety english",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video1-painkiller-safety-english.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video1-painkiller-safety-english.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video2-safe-lifting-hindi.mp4",
+     "title": "Safe lifting hindi",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video2-safe-lifting-hindi.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video2-safe-lifting-hindi.thumb.jpg"
+    },
+    {
+     "type": "video",
+     "file": "video3-kite-string-cut-gujarati.mp4",
+     "title": "Kite string cut gujarati",
+     "url": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video3-kite-string-cut-gujarati.mp4",
+     "thumb": "https://github.com/harshbhagat186-ux/spandan-ads/releases/download/2026-11-28/video3-kite-string-cut-gujarati.thumb.jpg"
+    }
+   ]
+  },
   {
    "date": "2026-11-27",
    "items": [
